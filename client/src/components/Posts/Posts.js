@@ -6,7 +6,7 @@ import { Grid, CircularProgress } from "@material-ui/core";
 
 export default function Posts() {
   const classes = useStyles();
-  const { data, loading, error } = usePosts();
+  const { data, loading } = usePosts();
   if (loading) {
     return <CircularProgress />;
   } else if (!loading && data?.length) {

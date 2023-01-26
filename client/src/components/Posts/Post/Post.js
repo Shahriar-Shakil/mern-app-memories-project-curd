@@ -19,6 +19,7 @@ import { likePost } from "../../../data/likePost";
 
 export default function Post({ post }) {
   const classes = useStyles();
+  // eslint-disable-next-line no-unused-vars
   const [postId, setPostId] = useRecoilState(selectedPostId);
   const handleDeletePost = () => {
     deletePosts(post?._id);
